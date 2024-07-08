@@ -94,6 +94,9 @@ LaTeX Project Public License version 1.3.
 
 
 ## Change Log
+2024-07-07:
+- Update GitHub Workflow dependencies
+
 2023-01-30:
 - Add environments for supplemental figures and tables
 
