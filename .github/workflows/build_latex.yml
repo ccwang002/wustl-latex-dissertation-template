@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check out Git Repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
 
     - name: Build LaTeX files
       uses: xu-cheng/latex-action@v4
