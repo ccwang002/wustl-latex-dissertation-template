@@ -94,6 +94,10 @@ LaTeX Project Public License version 1.3.
 
 
 ## Change Log
+2025-12-26:
+- Update deprecated memoir commands
+- Fix `\phantomlabel{}` implementation
+
 2024-07-07:
 - Update GitHub Workflow dependencies
 

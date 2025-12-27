@@ -13,7 +13,7 @@
 
 
 \NeedsTeXFormat{LaTeX2e}[1996/12/01]
-\ProvidesClass{wustlthesis}[2023/01/30 WUSTL thesis/dissertation template]
+\ProvidesClass{wustlthesis}[2025/12/26 WUSTL thesis/dissertation template]
 
 
 % ---- Define Page Layout -----------------------------------------------------
