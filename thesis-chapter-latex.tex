@@ -39,14 +39,14 @@ This example explicitly creates the panel numbers since figures often have their
         \centering
         \textbf{\sffamily A}\\[-0.5\onelineskip]
         \HUGE \emoji{cat}\\
-        \emoji{cat-face}
+        \emoji{cat-face}%
         \phantomlabel{fig:subfigdemo-cat}
     \end{subfigure}%
     \begin{subfigure}[b]{.5\linewidth}
         \centering
         \textbf{\sffamily B}\\[-0.5\onelineskip]
         \HUGE \emoji{dog}\\
-        \emoji{dog-face}
+        \emoji{dog-face}%
         \phantomlabel{fig:subfigdemo-dog}
     \end{subfigure}
     \caption[Two animals and their emojis.]{%
@@ -101,11 +101,13 @@ Note how the two adjacent figure environments are constructed (and their figure 
 
 \begin{figure}[p]
     \centering
-    \phantomlabel{fig:mitosis-prophase}
-    \phantomlabel{fig:mitosis-prometaphase}
-    \phantomlabel{fig:mitosis-metaphase}
-    \phantomlabel{fig:mitosis-anaphase}
-    \phantomlabel{fig:mitosis-telophase}
+    \begin{subfigure}{0pt}
+        \phantomlabel{fig:mitosis-prophase}
+        \phantomlabel{fig:mitosis-prometaphase}
+        \phantomlabel{fig:mitosis-metaphase}
+        \phantomlabel{fig:mitosis-anaphase}
+        \phantomlabel{fig:mitosis-telophase}
+    \end{subfigure}
     \includegraphics[width=\linewidth]{figures/cell-cycle-mitosis.pdf}
     \caption[Stages of mitotic phase of the cell cycle]{%
         Overview of different stages in the mitotic (M) phase of the animal cell cycle.
