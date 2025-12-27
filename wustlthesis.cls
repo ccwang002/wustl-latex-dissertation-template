@@ -80,7 +80,7 @@
     \renewcommand*{\printchaptername}{%
         \OnehalfSpacing\centering\chapnamefont\appendixname\ }
 }
-\addtodef{\appendix}{}{\chapterstyle{thesisappendix}}
+\apptocmd{\appendix}{\chapterstyle{thesisappendix}}{}{}
 
 % Section numbering down to subsection
 \setsecnumdepth{subsection}
@@ -127,7 +127,7 @@
 
 
 % ---- List of figures (LoF), and list of tables (LoT) -----------------------
-\addtodef{\listoffigures}{\clearpage}{}
+\pretocmd{\listoffigures}{\clearpage}{}{}
 \renewcommand*{\cftfigurename}{\figurename}
 \renewcommand*{\cftfigurepresnum}{\ }
 \renewcommand*{\cftfigureaftersnum}{:}
@@ -143,7 +143,7 @@
 \cftsetindents{suppfigure}{0em}{2.5em}
 
 
-\addtodef{\listoftables}{\clearpage}{}
+\pretocmd{\listoftables}{\clearpage}{}{}
 \renewcommand*{\cfttablename}{\tablename}
 \renewcommand*{\cfttablepresnum}{\ }
 \renewcommand*{\cfttableaftersnum}{:}
