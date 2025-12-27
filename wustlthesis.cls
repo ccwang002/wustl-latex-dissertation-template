@@ -104,6 +104,14 @@
 % ---- Bibliography/References style ------------------------------------------
 \setlength{\bibitemsep}{\onelineskip}
 
+% Re-define memoir citation commands
+\newcommand*{\fref}[1]{\figurerefname~\ref{#1}}
+\newcommand*{\tref}[1]{\tablerefname~\ref{#1}}
+\newcommand*{\pref}[1]{\pagerefname~\pageref{#1}}
+\newcommand*{\Aref}[1]{\appendixrefname~\ref{#1}}
+\newcommand*{\Cref}[1]{\chapterrefname~\ref{#1}}
+\newcommand*{\Sref}[1]{\sectionrefname\ref{#1}}
+
 
 % ---- Table of contents (ToC) -----------------------------------------------
 \setrmarg{3em}
